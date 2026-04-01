@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Funcionários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestão de Funcionários e Salários</h1>
+
+  <div id="mensagem"></div>
+
+  <div id="form-container">
+    <h2 id="form-titulo">➕ Adicionar Funcionário</h2>
+    <input type="hidden" id="campo-id" />
+    <div class="campo">
+      <label for="campo-nome">Nome</label>
+      <input type="text" id="campo-nome" placeholder="Ex: João Silva" maxlength="100" />
+    </div>
+    <div class="campo">
+      <label for="campo-cargo">Cargo</label>
+      <input type="text" id="campo-cargo" placeholder="Ex: Desenvolvedor" maxlength="100" />
+    </div>
+    <div class="campo">
+      <label for="campo-salario">Salário (R$)</label>
+      <input type="number" id="campo-salario" placeholder="Ex: 3500.00" min="0" step="0.01" />
+    </div>
+    <div class="btn-row">
+      <button id="btn-salvar" onclick="salvarFuncionario()">Salvar</button>
+      <button id="btn-cancelar" onclick="cancelarEdicao()">Cancelar</button>
+    </div>
+  </div>
+
+  <div id="tabela-container">
+    <h2>👥 Funcionários Cadastrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Cargo</th>
+          <th>Salário</th>
+          <th>Cadastrado em</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-tabela">
+        <tr><td colspan="6" id="sem-dados">Carregando...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
