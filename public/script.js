@@ -70,7 +70,7 @@
       document.getElementById('campo-nome').value    = nome;
       document.getElementById('campo-cargo').value   = cargo;
       document.getElementById('campo-salario').value = salario;
-      document.getElementById('form-titulo').textContent = '✏️ Editar Funcionário';
+      document.getElementById('form-titulo').textContent = ' Editar Funcionário';
       document.getElementById('btn-cancelar').style.display = 'inline-block';
       document.getElementById('campo-nome').focus();
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -81,7 +81,7 @@
       document.getElementById('campo-nome').value    = '';
       document.getElementById('campo-cargo').value   = '';
       document.getElementById('campo-salario').value = '';
-      document.getElementById('form-titulo').textContent = '➕ Adicionar Funcionário';
+      document.getElementById('form-titulo').textContent = ' Adicionar Funcionário';
       document.getElementById('btn-cancelar').style.display = 'none';
     }
 
